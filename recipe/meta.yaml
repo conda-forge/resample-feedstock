@@ -1,5 +1,5 @@
 {% set name = "resample" %}
-{% set version = "1.0.1" %}
+{% set version = "1.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/resample-{{ version }}.tar.gz
-  sha256: f4f7eec3ba3316e7f573582ef36afc936fb9090b33b14b024981fa26ea2aad60
+  sha256: 92071cb0c2c1f7429e6a21ae3073bf3e69b11573a0dfaa04429737931ad4ab82
 
 build:
   number: 0
