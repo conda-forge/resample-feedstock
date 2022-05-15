@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >= 3.7
   run:
-    - numpy >=1.17
-    - python
+    - numpy >=1.19
+    - python >= 3.7
     - scipy >=1.5
 
 test:
