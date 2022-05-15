@@ -25,12 +25,16 @@ requirements:
     - scipy >=1.5
 
 test:
+  requires:
+    - pytest
+    - pip
   imports:
     - resample
-  commands:
-    - pip check
   requires:
     - pip
+  commands:
+    - python -m pytest tests
+    - pip check
 
 about:
   home: https://github.com/resample-project/resample
