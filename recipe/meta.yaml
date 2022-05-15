@@ -42,3 +42,4 @@ extra:
   recipe-maintainers:
     - dsaxton
     - HDembinski
+    - conda-forge/scikit-hep
