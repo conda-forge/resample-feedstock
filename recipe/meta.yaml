@@ -19,8 +19,8 @@ requirements:
   host:
     - pip !=22.1.0
     - python >=3.7
-  run:
     - numpy >=1.19
+  run:
     - python >=3.7
     - scipy >=1.5
 
