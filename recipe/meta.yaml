@@ -37,7 +37,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/resample-project/resample
+  home: https://github.com/scikit-hep/resample
   summary: Tools for randomization-based inference in Python
   license: BSD-3-Clause
   license_file: LICENSE
