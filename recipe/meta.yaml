@@ -20,6 +20,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
   host:
+  - python
     - pip !=22.1.0
     - numpy >=1.19
   run:
