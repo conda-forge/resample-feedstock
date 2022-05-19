@@ -1,5 +1,5 @@
 {% set name = "resample" %}
-{% set version = "1.0.1" %}
+{% set version = "1.5.1" %}
 
 
 package:
@@ -8,32 +8,40 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/resample-{{ version }}.tar.gz
-  sha256: f4f7eec3ba3316e7f573582ef36afc936fb9090b33b14b024981fa26ea2aad60
+  sha256: 92071cb0c2c1f7429e6a21ae3073bf3e69b11573a0dfaa04429737931ad4ab82
 
 build:
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - {{ compiler('cxx') }}
   host:
-    - pip
     - python
+    - pip !=22.1.0
+    - numpy >=1.19
   run:
-    - numpy >=1.17
     - python
+    - numpy >=1.19
     - scipy >=1.5
 
 test:
+  source_files:
+    - tests
+  requires:
+    - pytest
+    - pip
   imports:
     - resample
   commands:
+    - python -m pytest tests
     - pip check
-  requires:
-    - pip
 
 about:
-  home: https://github.com/resample-project/resample
+  home: https://github.com/scikit-hep/resample
   summary: Tools for randomization-based inference in Python
   license: BSD-3-Clause
   license_file: LICENSE
