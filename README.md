@@ -1,11 +1,11 @@
-About resample
-==============
+About resample-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/resample-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/scikit-hep/resample
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/resample-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for randomization-based inference in Python
 
