@@ -22,11 +22,10 @@ requirements:
   host:
     - python
     - pip !=22.1.0
-    - numpy >=1.19
   run:
     - python
-    - numpy >=1.19
-    - scipy >=1.5
+    - numpy >=1.21
+    - scipy >=1.10
 
 test:
   source_files:
