@@ -11,7 +11,7 @@ source:
   sha256: ff66c9142cae46317fb8b58e7acf59c963721e4f2a1505830cce99b57e78f091
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,6 +22,8 @@ requirements:
   host:
     - python
     - pip !=22.1.0
+    - setuptools
+    - setuptools_scm
   run:
     - python
     - numpy >=1.21
