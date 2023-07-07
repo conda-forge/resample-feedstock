@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python
-    - pip !=22.1.0
-    - setuptools
-    - setuptools_scm
+    - python >=3.8
+    - setuptools >=61
+    - setuptools-scm >=6.2
+    - pip
   run:
-    - python
+    - python >=3.8
     - numpy >=1.21
     - scipy >=1.10
 
