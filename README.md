@@ -144,6 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@HDembinski](https://github.com/HDembinski/)
-* [@conda-forge/scikit-hep](https://github.com/conda-forge/scikit-hep/)
+* [@conda-forge/scikit-hep](https://github.com/orgs/conda-forge/teams/scikit-hep/)
 * [@dsaxton](https://github.com/dsaxton/)
 
