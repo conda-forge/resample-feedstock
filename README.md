@@ -9,6 +9,10 @@ Package license: BSD-3-Clause
 
 Summary: Tools for randomization-based inference in Python
 
+Development: https://github.com/scikit-hep/resample
+
+Documentation: http://resample.readthedocs.io/
+
 Current build status
 ====================
 
