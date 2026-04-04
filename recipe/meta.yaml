@@ -1,5 +1,5 @@
 {% set name = "resample" %}
-{% set version = "1.10.2" %}
+{% set version = "1.10.3" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/resample-{{ version }}.tar.gz
-  sha256: a61821d9456517305892df16f935d2712ffc7d05633ecb1c9d744bdc9f672c31
+  sha256: 56d98049e85da72de019872e5ecb17a15eef753917664f626c1787e30d8674be
 
 build:
   noarch: python
